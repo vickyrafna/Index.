@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        .input-container {
+          display: -ms-flexbox; 
+          display: flex;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        
+        .icon {
+          padding: 10px;
+          background: dodgerblue;
+          color: white;
+          min-width: 50px;
+          text-align: center;
+        }
+        
+        .input-field {
+          width: 100%;
+          padding: 10px;
+          outline: none;
+        }
+        
+        .input-field:focus {
+          border: 2px solid dodgerblue;
+        }
+        
+      
+        .btn {
+          background-color: dodgerblue;
+          color: white;
+          padding: 15px 20px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        .btn:hover {
+          opacity: 1;
+        }
+        .topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+h2{
+    margin-top: 80px;
+    color: white;
+}
+body{
+    background-image:url("https://media.istockphoto.com/id/1401793336/photo/gaming-personal-computer-and-ultrawide-monitor-in-neon-light.jpg?b=1&s=170667a&w=0&k=20&c=jUj9yt_HVcjP-xjHhancByh8li2CFSXerq1W9CiCnmQ=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#button{
+    display: block;
+    position: relative;
+}
+        </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+        <a class="active" href="#Charlene">Charlene</a>
+        <a href="#Home">Home</a>
+        <a href="#contact">Contact</a>
+        <input type="text" placeholder="Search..">
+      </div>
+    <form action="/action_page.php" style="max-width:500px;margin:auto">
+        <h2>Registration Form</h2>
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+        </div>
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Email" name="email">
+          </div>
+          <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Password" name="psw">
+          </div>
+          <button type="submit" class="btn">Register</button>
+    </form>
+    <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>     
+
+</body>
+<script>
+   
+        let name = prompt("what's your name?");
+        if (name === "Sophia") {
+            alert("your name comes from the greek -Sophia");
+        }
+        function fullName (firstName , lastName) {
+            alert(firstName + " "+ lastName);
+
+        }
+        let firstName = prompt("what's your firstname?");
+        let lastName = prompt("what's your lastname?");
+        fullName(firstName,lastName);
+        fullName("Rafna,Jiongo");
+        
+</script>
+</html>
